@@ -1,10 +1,20 @@
 var express = require('express')()
 var fs = require('fs')
+var seneca = require('seneca')()
+
+seneca.add({cmd:'readfile'},function(args,done){
+    fs.readFile(__dirname+"/users.json",'UTF8',function(err,data){
+        done(null,data);
+    });
+})
 
 express.get('/api/people/',function(req,res){
- fs.readFile(__dirname+"/users.json",'UTF8',function(err,data){
+    seneca.act({cmd:'readfile'},function(err,data){
+        if(err)
+            console.log('Error encountered !');
+        else
         res.end(data);
-    });
+    })
 })
 
 var server = express.listen(4000,function(){
