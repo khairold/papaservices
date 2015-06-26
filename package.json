@@ -1,0 +1,25 @@
+{
+  "name": "papaservices",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/khairold/papaservices.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khairold/papaservices/issues"
+  },
+  "homepage": "https://github.com/khairold/papaservices",
+  "dependencies": {
+    "body-parser": "^1.13.1",
+    "express": "^4.13.0",
+    "seneca": "^0.6.2",
+    "seneca-jsonfile-store": "^0.2.2"
+  }
+}

@@ -1,0 +1,20 @@
+{
+	"entity$":{
+		"name":"people"
+	},
+	"list": {
+		"al-kavadlo": true,
+		"pavel-tsatsouline": true
+	},
+	"single": {
+		"al-kavadlo": {
+			"name": "Al Kavadlo",
+			"website": "http://www.alkavadlo.com"
+		},
+		"pavel-tsatsouline": {
+			"name": "Pavel Tsatsouline",
+			"website": "http://www.strongfirst.com"
+		}
+	},
+	"id":"dev"
+}
